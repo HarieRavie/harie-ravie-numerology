@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#17132d">
+<title>Harie Ravie's Numerology</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="app-shell">
+  <header class="hero">
+    <div class="brand-mark">✦</div>
+    <p class="eyebrow">HARIE RAVIE'S</p>
+    <h1>Numerology</h1>
+    <p class="subtitle">Pyramid Pattern Calculator</p>
+  </header>
+
+  <section class="panel input-panel">
+    <label for="userInput">Enter a name or number</label>
+    <input id="userInput" type="text" autocomplete="off" autocapitalize="characters"
+           placeholder="Example: HARIE RAVIE or 12345" maxlength="80">
+    <p class="hint">Letters and numbers are supported. Spaces are ignored.</p>
+    <div class="actions">
+      <button id="generateBtn" class="primary" type="button">Generate pattern</button>
+      <button id="clearBtn" class="secondary" type="button">Clear</button>
+    </div>
+    <p id="errorMessage" class="error" role="alert" hidden></p>
+  </section>
+
+  <section id="outputDiv" class="results" hidden aria-live="polite">
+    <div class="summary-card">
+      <p class="section-label">TOTAL NUMEROLOGY VALUE</p>
+      <div id="totalValue" class="total-value">00</div>
+      <div id="enteredValue" class="entered-value"></div>
+    </div>
+
+    <section class="panel">
+      <h2>Numerology interpretation</h2>
+      <div id="NumVal" class="interpretation"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Pyramid pattern</h2>
+      <pre id="PyramidPattern" class="pyramid"></pre>
+    </section>
+
+    <section id="doubleDigitsSection" class="panel" hidden>
+      <h2>Two-digit number meanings</h2>
+      <div id="doubleDigits" class="interpretation"></div>
+    </section>
+    <button id="shareBtn" class="share" type="button">Share result</button>
+  </section>
+  <footer>Numerology Pyramid Pattern · Works offline</footer>
+</main>
+<script src="numerology-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

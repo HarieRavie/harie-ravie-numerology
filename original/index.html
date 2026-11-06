@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harie Ravie's Numerology</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Script link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="mt-2 w-100">
+            <h3>HARIE RAVIE's</h3>
+            <div class="mb-5">
+                <h1>Numerology Pyramid Pattern</h1>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column gap-2 mtop">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md">
+                        <label for="userInput" class="form-label"><h4>Enter the value</h4></label>
+                        <input type="text" class="form-control" id="userInput" value="" required>
+                        <div class="invalid-feedback">
+                            Please provid a valid text.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit" onclick="generatePattern()">Generate</button>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column gap-2 mtop" id="outputDiv" hidden>
+                <h2>Output</h2>
+                <p id="TotalSum"></p>
+                <div id="NumVal"></div>
+                <pre id="PyramidPattern" class="text-center outputBackground" hidden></pre>
+                <div id="doubleDigits" class="text-center otBackground" hidden></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

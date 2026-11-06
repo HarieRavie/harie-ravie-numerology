@@ -1,0 +1,32 @@
+*{box-sizing:border-box}
+:root{color-scheme:light;font-family:Arial,"Noto Sans Tamil",sans-serif}
+body{margin:0;background:#f5f3fa;color:#211b35;min-height:100vh}
+.app-shell{width:100%;max-width:620px;margin:0 auto;padding:0 16px 28px}
+.hero{margin:0 -16px 20px;padding:30px 20px 28px;text-align:center;color:#fff;background:linear-gradient(145deg,#17132d,#49317d 70%,#7650a8);border-radius:0 0 26px 26px}
+.brand-mark{width:42px;height:42px;margin:0 auto 10px;border:1px solid #ffffff70;border-radius:14px;display:grid;place-items:center;font-size:25px;color:#f8d77a}
+.eyebrow{font-size:11px;letter-spacing:3px;font-weight:700;margin:0 0 7px;color:#d8c9f5}
+h1{font-size:30px;line-height:1.15;margin:0;font-weight:800}
+.subtitle{margin:8px 0 0;color:#e6ddf5;font-size:14px}
+.panel{background:#fff;border:1px solid #ebe6f3;border-radius:18px;padding:18px;margin-bottom:14px;box-shadow:0 5px 18px #281b4710}
+.input-panel label{display:block;font-size:15px;font-weight:700;margin-bottom:10px}
+input{width:100%;border:1.5px solid #d9d1e7;border-radius:12px;padding:14px 13px;font-size:16px;outline:none;color:#211b35;background:#fff}
+input:focus{border-color:#7950b5;box-shadow:0 0 0 3px #7950b51c}
+.hint{font-size:12px;color:#777184;margin:8px 0 15px}
+.actions{display:flex;gap:10px}
+button{border:0;border-radius:12px;padding:13px 15px;font-size:14px;font-weight:700;cursor:pointer}
+.primary{background:#6843a1;color:white;flex:1}
+.secondary{background:#f0ecf6;color:#483b5d}
+.error{color:#b42318;font-size:13px;margin:12px 0 0}
+.results{display:block}
+.summary-card{background:linear-gradient(135deg,#261c45,#65449a);border-radius:18px;color:#fff;padding:20px;text-align:center;margin-bottom:14px}
+.section-label{font-size:10px;letter-spacing:1.7px;color:#d8c9f5;font-weight:700;margin:0}
+.total-value{font-size:48px;font-weight:800;margin:5px 0}
+.entered-value{font-size:13px;color:#e4d9f2;overflow-wrap:anywhere}
+h2{font-size:16px;margin:0 0 13px;color:#302344}
+.interpretation{font-size:15px;line-height:1.75;color:#332b40;overflow-wrap:anywhere;white-space:pre-wrap}
+.numval{padding:12px;background:#f7f3fc;border-left:4px solid #8057b8;border-radius:8px}
+.pyramid{font-family:monospace;font-size:18px;line-height:1.8;white-space:pre;overflow-x:auto;text-align:center;background:#f8f6fb;border:1px dashed #d9cbe9;border-radius:10px;padding:14px;color:#39275a;margin:0}
+.share{width:100%;background:#eee8f7;color:#563783;margin:0 0 14px}
+footer{text-align:center;color:#91899c;font-size:11px;padding:8px}
+[hidden]{display:none!important}
+@media(min-width:500px){.hero{margin-top:18px;border-radius:24px}.app-shell{padding-top:0}}
